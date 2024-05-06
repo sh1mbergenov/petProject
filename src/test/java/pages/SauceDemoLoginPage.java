@@ -15,6 +15,8 @@ public class SauceDemoLoginPage {
     public WebElement password;
     @FindBy(id = "login-button")
     public WebElement loginButton;
+    @FindBy(xpath = "//h3[text()='Epic sadface: Username and password do not match any user in this service']")
+    public WebElement errorMessage;
 
 
 }
