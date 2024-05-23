@@ -39,7 +39,7 @@ public class ReqRest {
     }
     @Test
     public void Post(){
-        requestBody requestBody = new requestBody();
+        RequestBody requestBody = new RequestBody();
         requestBody.setEmail("yryskeldi@gmail.com");
         requestBody.setPassword("yryskeldi");
         Response response = RestAssured.given().contentType(ContentType.JSON).body(requestBody)
