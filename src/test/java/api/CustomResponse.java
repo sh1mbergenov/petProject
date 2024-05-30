@@ -1,25 +1,21 @@
 package api;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
 @Data
-
-public class RequestBody {
-    private String email;
-    public String password;
-    private String type_of_pay;
-    private String bank_account_name;
-    private String description;
-    private int balance;
-
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class CustomResponse {
     private String category_title;
     private String category_description;
-    private boolean flag;
 
+    private int seller_id;
     private String company_name;
     private String seller_name;
+    private String email;
     private String phone_number;
     private String address;
+
 
 
 
