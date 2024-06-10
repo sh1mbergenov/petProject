@@ -1,5 +1,7 @@
 package api;
 
+import antitis.CustomResponse;
+import antitis.RequestBody;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
@@ -9,8 +11,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import utilities.CashWiseAuthorization;
 import utilities.Config;
-
-import java.io.ObjectInputFilter;
 
 public class POJOPractice {
     @Test
